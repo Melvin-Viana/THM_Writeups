@@ -16,50 +16,58 @@ This lab uses a vulnerable web application created by TryHackMe. With that webs 
   - Inspector
   - Debugger
   - Network Tab
-
+--------
 ### 🚶‍♂️Task 1 - Walking An Application
+🥅 Goal:
+- To give an overview as to what built-in tools are available in a modern browser.
 
-🥅 Goal here was to give an overview as to what built-in tools are available in a modern browser.
+💡 Key Takeway: 
+- Automated security tools may miss potential vulnerabilities, which make manually testing a useful activity for hackers and cybersecurity professionals.
 
-💡 Key Takeway - Automated security tools may miss potential vulnerabilities, which make manually testing a useful activity for hackers and cybersecurity professionals.
-
-
+-------
 ### 👀 Task 2 - Exploring The Website
+🥅 Goal:
+- To show how a penetration tester would assess vulnerable features throughout the website.
 
-🥅 Goal here to show how a penetration tester would assess vulnerable features throughout the website.
-
-💡 Key Takeway - Several features are accessible with the built-in tools from modern browser. A penetration tester may simply find vulnerabilities by clicking through web pages and inputting
-
-
+💡 Key Takeway :
+- Several features are accessible with the built-in tools from modern browser.
+- A penetration tester may simply find vulnerabilities by clicking through web pages and inputting
+--------
 ### 📃 Task 3 - Viewing the Page Source
-
-🥅 Goal was conceptual to teach how to view "Page source" and to explain how to find information through "page source".
+🥅 Goal:
+- To teach how to view "Page source" and to explain how to find information through "page source".
 
 💡 Key Lessons:
-
 - Web applications are an attack surface where hackers can find information on an organization information system.
 - Keep web application frameworks up to date
 - Inspect your code for vulnerable information before deploying to production
-
+-------
 ### 🔎 Task 4 - Developer Tools - Inspector
-
-🥅 Goal -> conceptual to teach about modern browser developer tools.
+🥅 Goal: 
+- To teach about modern browser developer tools.
 
 💡 Key Lesson
 - Inspector tool shows HTML, CSS and JavaScript which can present vulnerabilities in a web application
-
+-------
 ### 💻 Task 5 - Developer Tools - Debugger
-
 🥅 Goal -> conceptual to show how to access and debug Javascript with Debugger tool
 
-💡 Key Lesson
+💡 Key Lessons
 - Debugger tool gives an opportunity to place breakpoints on Javaascript that is accessible on the web app.
 - You have access to JavaScript and may find vulnerabilities through debugger.
+-------
 
 ### 🛜 Task 6 - Developer Tools - Network
-
 🥅 Goal -> conceptual to show the "Network" tab capabilities.
 
-💡 Key Lesson
+💡 Key Lessons
 - Network tab in Developer Tools shows information on each and every external request.
 - Filtering through external network request data can present vulnerabilities
+---------
+## 🧠 Lessons Learned
+- JavaScript can manipulated with Debugger tool
+- Web applications may have URL endpoints that weren't supposed to be accessed by the public
+- Using web app frameworks present vulnerabilities if you aren't up to date
+- Web application vulnerabilities can be exploited without even using scripts or special tools.  
+🔗 Room Link
+[https://tryhackme.com/room/walkinganapplication](https://tryhackme.com/room/walkinganapplication)
