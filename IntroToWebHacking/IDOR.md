@@ -104,27 +104,32 @@ IDOR is an access control vunerability, this room teaches about IDOR and how to 
 - To practice what was learned from previous tasks.
 
 🛠️ **Approach:**
-- Utilizing a vulnerable machine given by Try Hack Me, the user tries to find IDORs.
+- Utilizing a vulnerable web server given by TryHackMe, the user tries to find IDORs.
 
 🔑 **Key Takeaway:**
-- <Lesson>
+- URL endpoints may be accessible through Dev Tools.
+- Check API requests being made when signing in and going through each feature in the web app.
 ---
 
 ## 🧠 Lessons Learned
 
-- <Big takeaway 1>
-- <Big takeaway 2>
-- <Big takeaway 3>
+- Objects may be insecure through the web app features.
+- Authentication mechanisms might not account for utilizing a user ID by unauthorized users.
+- Hashing & Encoding won't keep the data entirely secure when its public facing, i.e. through dev tools.
 
 ---
 
 ## 🚀 Improvements / Next Steps
 
 - <What you would try next>
+  - I would like to think about finding user password with this room, applying previous rooms skills. (Content Dsicovery / Authentication Bypass)
+
 - <Tools you could add>
+  - Authentication Bypass -> Brute force with wordlists
 - <How to go deeper>
+  - See if I can change password of admin, get all user ID information and then see if I change passwords of all of them.
 
 ---
 
 ## 🔗 Room Link
-<Insert TryHackMe link here>
+[https://tryhackme.com/room/idor](https://tryhackme.com/room/idor)
