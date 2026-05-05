@@ -13,19 +13,14 @@ IDOR is an access control vunerability, this room teaches about IDOR and how to 
 - IDOR stands for Insecure Direct Object Reference
 - This vulnerability when exploited allows unauthorized access to objects
 - <What skills are being taught>
-
+  - Brute force acessing data of other user's with the use of user IDs.
 ---
 
 ## 🔍 Methodology
-
-- <How tasks are organized>
-- <How you approached solving them>
-- <Any tools or mindset used>
-
----
-
-## 📋 Tasks Breakdown
-
+- The room teaches about IDOR and it's practical use in a pentration test for a web application.
+- After introducing IDOR it teaches how IDs can be encoded/encrypted and attackers can decode/decrypt to get User ID information.
+- The room also teaches different locations to find IDORS
+- The room is concluded with a practical example of how IDOR is used on a vulnerable web application.
 ---
 
 ### ❓ Task 1 - What is an IDOR?
