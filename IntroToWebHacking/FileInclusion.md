@@ -1,7 +1,7 @@
 # 📁 File Inclusion
 
 - **Platform:** TryHackMe
-- **Difficulty:** Easy
+- **Difficulty:** Medium
 - **Path:** Jr Penetration Tester
 - **Objective:** Introduces file inclusion vulnerabilities, including LFI, RFI, and directory traversal.
 
@@ -71,62 +71,69 @@ Describe HOW the room is structured and your approach.
 
 ### 🗄️ Task 4 - Local File Inclusion
 🥅 **Goal:**
--
+- Teach about LFI attacks and importance of web app security when developing with PHP
 
 🛠️ **Approach:**
-- <Steps>
+- Room teaches about LFI and how programming languages present LFI vulnerabilities.
+- Developer's need to be aware of certain LFI vulnerabilities.
+- PHP is the language that this room presents LFI vulnerabilities.
 
 🔑 **Key Takeaway:**
-- <Lesson>
+- Certain functions can give access to directories without proper input validation.
+- Following code when entered into an HTTP request gives access to a different language directory.
+```php
+<?PHP
+	include("languages/". $_GET['lang']);
+?>
+```
+  - Using this code and manipulating it to access certain OS files allows for LFI/Path-traversal attacks
+---
+
+### 📁 Task 5 - LFI continued
+🥅 **Goal:**
+- Continuing with previous task, different LFI attacks are introduced in this task.
+
+🛠️ **Approach:**
+- 4 different ways an LFI attack can be made are shown.
+- Knowledge of these 4 LFI attacks are applied through the Labs provided.
+
+🔑 **Key Takeaway:**
+- If your attack doesn't work in input, try putting the LFI attack throught he address bar.
+- Directory traversal gives access to /etc directory; home of very important OS files
+---
+
+### 🕹️ Task 6 - Remote File Inclusion - RFI
+🥅 **Goal:**
+- To teach this technique to include remote files into a vulnerable application.
+
+🛠️ **Approach:**
+- Room educates how RFI attacks occur and explains consequences from RFI attacks.
+
+🔑 **Key Takeaway:**
+- RFI attacks can lead to Senstive Information Disclosure, Cross-Site-Scripting (XSS), Denial of Service (DoS).
+- When there is no input validation, certain functions can allow malicious files to enter the web server from remote locations.
+---
+
+### 🏥 Task 7 - Remediation
+🥅 **Goal:**
+- This task lists common suggestions to prevent file inclusion vulnerabilities.
+
+🔑 **Key Takeaway:**
+- Keep web app frameworks updated.
+- WAFs and proper input validation is important to prevent these attacks.
 
 ---
 
-### 🍪 Task 5 - <Task Name>
+### 🚪 Task 8 - Challenge
 🥅 **Goal:**
-- <Goal>
+- To challenge the user to apply knowledge from room without help.
 
 🛠️ **Approach:**
-- <Steps>
+- Tests the knowledge of the user and applies knowledge from pre-requiste rooms.
 
 🔑 **Key Takeaway:**
-- <Lesson>
-
----
-
-### 🧩 Task 6 - <Task Name>
-🥅 **Goal:**
-- <Goal>
-
-🛠️ **Approach:**
-- <Steps>
-
-🔑 **Key Takeaway:**
-- <Lesson>
-
----
-
-### 🗂️ Task 7 - <Task Name>
-🥅 **Goal:**
-- <Goal>
-
-🛠️ **Approach:**
-- <Steps>
-
-🔑 **Key Takeaway:**
-- <Lesson>
-
----
-
-### 🚪 Task 8 - <Task Name>
-🥅 **Goal:**
-- <Goal>
-
-🛠️ **Approach:**
-- <Steps>
-
-🔑 **Key Takeaway:**
-- <Lesson>
-
+- Cookie tampering to exploit PHP include function.
+- Post request
 ---
 
 ## 🧠 Lessons Learned
